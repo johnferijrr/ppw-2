@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\PostController;
+use app\Http\Controllers\ImageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +35,5 @@ Route::get('/page2', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+
+Route::get('/posts', [ImageController::class, 'index']);
